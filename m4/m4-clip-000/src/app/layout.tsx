@@ -1,8 +1,8 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "/styles/site.css";
+import React from "react";
 import "/styles/fontawesome/css/all.css";
 import "/styles/roboto/roboto.css";
+import "/styles/site.css";
 
 export const metadata = {
   title: "Next.js",

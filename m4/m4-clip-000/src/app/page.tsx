@@ -1,14 +1,18 @@
 "use client";
-import { useState } from "react";
+import Footer from "@/app/footer";
+import Header from "@/app/header";
+import Home from "@/app/home";
+import Nav from "@/app/nav";
 
-export default function Home() {
-  const [counter, setCounter] = useState(100);
+export default function HomePage() {
   return (
-    <div>
-      <h1>Hello From Pluralsight!</h1>
-      <h1>
-        <button onClick={() => setCounter(counter + 1)}>{counter}</button>
-      </h1>
+    <div className="container-fluid">
+      <Header />
+      <div className="full-page-border app-content-background">
+        <Nav />
+        <Home />
+      </div>
+      <Footer />
     </div>
   );
 }
